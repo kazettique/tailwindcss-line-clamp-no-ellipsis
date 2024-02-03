@@ -22,7 +22,7 @@ const lineClampNoEllipsis = plugin(
         {
           [`.${pluginClassName}-none`]: {
             overflow: 'unset',
-            maxHeight: 'auto',
+            maxHeight: 'unset',
           },
         },
       ],
