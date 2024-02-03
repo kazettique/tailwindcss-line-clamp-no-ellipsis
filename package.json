@@ -1,0 +1,22 @@
+{
+  "name": "tailwindcss-line-clamp-no-ellipsis",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kazettique/tailwindcss-line-clamp-no-ellipsis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kazettique/tailwindcss-line-clamp-no-ellipsis/issues"
+  },
+  "homepage": "https://github.com/kazettique/tailwindcss-line-clamp-no-ellipsis#readme",
+  "peerDependencies": {
+    "tailwindcss": ">=3.4.1"
+  }
+}
