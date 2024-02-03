@@ -1,8 +1,8 @@
 {
-  "name": "tailwindcss-line-clamp-no-ellipsis",
+  "name": "@kazettique/tailwindcss-line-clamp-no-ellipsis",
   "version": "0.1.0",
   "description": "Line clamp without ellipsis",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/kazettique/tailwindcss-line-clamp-no-ellipsis#readme",
   "peerDependencies": {
-    "tailwindcss": ">=3.4.1"
+    "tailwindcss": ">=2.0.0 || >=3.0.0"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
