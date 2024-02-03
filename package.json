@@ -1,6 +1,6 @@
 {
   "name": "@kazettique/tailwindcss-line-clamp-no-ellipsis",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Line clamp without ellipsis",
   "main": "src/index.js",
   "scripts": {
