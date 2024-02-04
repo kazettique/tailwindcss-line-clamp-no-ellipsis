@@ -1,5 +1,7 @@
 # tailwindcss-line-clamp-no-ellipsis
 
+A tailwind plugin for line clamp without ellipsis.
+
 This tailwind plugin is inspired by [tailwindlabs/tailwindcss-line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp/tree/master). Most of the time, we want to clamp the text with specific number of lines, and adding an ellipsis `...` at the end. But sometimes we just ONLY want to clipped the text WITHOUT ellipsis.
 
 ## Installation
@@ -19,6 +21,7 @@ module.exports = {
     require('tailwindcss-line-clamp-no-ellipsis'),
     // ...
   ],
+  // ...
 }
 ```
 
@@ -54,10 +57,9 @@ The plugin provides 1 ~ 6 lines clamp, the css is generated shown below:
 
 ## Customization
 
-To extend line clamp more then 6 lines, please add custom config in `tailwind.config.js`:
+To use line clamp more then 6 lines, please add custom config in `tailwind.config.js` with `lineClamp` key:
 
 ```js
-// tailwind.config.js
 module.exports = {
   theme: {
     extend: {
@@ -68,4 +70,12 @@ module.exports = {
     }
   },
 }
+```
+
+Then we are good to go!
+
+```html
+<div class="line-clamp-no-ellipsis-7">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eum illum modi nobis nisi similique quasi obcaecati, ipsa eos quaerat.
+</div>
 ```
