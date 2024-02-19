@@ -38,7 +38,7 @@ module.exports = {
 
 ## 使用方式
 
-使用 CSS class 名稱 `line-clamp-no-ellipsis-{截斷行數}`，截斷行數填入欲截斷的行數：
+使用 CSS class 名稱 `line-clamp-no-ellipsis-{截斷行數}`，「截斷行數」填入欲截斷的行數：
 
 ```html
 <div class="line-clamp-no-ellipsis-2">
@@ -46,7 +46,7 @@ module.exports = {
 </div>
 ```
 
-欲解除文字段落的截斷，使用`line-clamp-no-ellipsis-none`：
+欲解除文字段落的截斷，使用`line-clamp-no-ellipsis-none`，範例如下：
 
 ```html
 <div class="line-clamp-no-ellipsis-2 md:line-clamp-no-ellipsis-none">
