@@ -2,7 +2,20 @@
 
 A tailwind plugin for line clamp without ellipsis.
 
-This tailwind plugin is inspired by [tailwindlabs/tailwindcss-line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp/tree/master). Most of the time, we want to clamp the text with specific number of lines, and adding an ellipsis `...` at the end. But sometimes we just ONLY want to clipped the text WITHOUT ellipsis.
+This tailwind plugin is inspired by [tailwindlabs/tailwindcss-line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp/tree/master), which became built-in feature in tailwindcss.
+
+Most of the time, we want to clamp the text with specific number of lines, and adding an ellipsis `...` at the end. But sometimes we just ONLY want to clipped the text WITHOUT ellipsis.
+
+若您的母語為中文，請參閱[中文版文件](readme.zh-tw.md)。
+
+## Demo
+
+|                   | Original                                     | With Ellipsis                                          | Without Ellipsis                                             |
+| ----------------- | -------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------ |
+| Html              | `<div>...</div>`                             | `<div class="line-clamp-2">...</div>`                  | `<div class="line-clamp-no-ellipsis-2">...</div>`            |
+| Result (English)  | ![en original](./src/images/en-original.png) | ![en with ellipsis](./src/images/en-with-ellipsis.png) | ![en without ellipsis](./src/images/en-without-ellipsis.png) |
+| Result (Chinese)  | ![ch original](./src/images/ch-original.png) | ![ch with ellipsis](./src/images/ch-with-ellipsis.png) | ![ch without ellipsis](./src/images/ch-without-ellipsis.png) |
+| Result (Japanese) | ![jp original](./src/images/jp-original.png) | ![jp original](./src/images/jp-with-ellipsis.png)      | ![jp without ellipsis](./src/images/jp-without-ellipsis.png) |
 
 ## Installation
 
