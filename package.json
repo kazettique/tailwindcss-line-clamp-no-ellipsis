@@ -1,16 +1,19 @@
 {
   "name": "tailwindcss-line-clamp-no-ellipsis",
-  "version": "0.1.3",
-  "description": "Line clamp without ellipsis",
+  "version": "0.1.4",
+  "description": "A tailwind plugin for line clamp without ellipsis.",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release:patch": "npm version patch && git push --follow-tags",
+    "release:minor": "npm version minor && git push --follow-tags",
+    "release:major": "npm version major && git push --follow-tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://git@github.com/kazettique/tailwindcss-line-clamp-no-ellipsis.git"
   },
-  "author": "",
+  "author": "kazettique",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kazettique/tailwindcss-line-clamp-no-ellipsis/issues"
@@ -24,5 +27,8 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
     "prettier": "^3.2.4"
-  }
+  },
+  "keywords": [
+    "tailwindcss"
+  ]
 }
