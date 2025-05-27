@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-line-clamp-no-ellipsis",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A tailwind plugin for line clamp without ellipsis.",
   "main": "src/index.js",
   "scripts": {
