@@ -1,13 +1,13 @@
 {
   "name": "tailwindcss-line-clamp-no-ellipsis",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A tailwind plugin for line clamp without ellipsis.",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release:patch": "npm version patch && git push --follow-tags",
-    "release:minor": "npm version minor && git push --follow-tags",
-    "release:major": "npm version major && git push --follow-tags"
+    "release:patch": "npm version patch",
+    "release:minor": "npm version minor",
+    "release:major": "npm version major"
   },
   "repository": {
     "type": "git",
