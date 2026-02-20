@@ -72,15 +72,18 @@ jobs:
       - name: Commit version bump and changelog
         run: |
           git add package.json CHANGELOG.md
-          git commit -m "chore(release): prepare for ${{ env.TAG }}"
+          git diff --cached --quiet && echo "Nothing to commit, skipping" || \
+            git commit -m "chore(release): prepare for ${{ env.TAG }}"
 
       - name: Tag release
-        run: git tag ${{ env.TAG }} -m "Release ${{ env.TAG }}"
+        run: |
+          git tag ${{ env.TAG }} -m "Release ${{ env.TAG }}" 2>/dev/null && \
+            echo "Tag created" || echo "Tag ${{ env.TAG }} already exists, skipping"
 
       - name: Push to main
         run: |
           git push origin main
-          git push origin ${{ env.TAG }}
+          git push origin ${{ env.TAG }} || echo "Tag already on remote, skipping"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
