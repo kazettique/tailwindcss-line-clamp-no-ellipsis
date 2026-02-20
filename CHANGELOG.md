@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.1] - 2026-02-20
+
+### Chores
+
+- Merge v0.2.0 back into develop
+
+### CI
+
+- Add manual publish dispatch workflow and make release steps idempotent
+- Migrate to npm OIDC trusted publishing
+- Add manual publish dispatch workflow and make release steps idempotent
+
 ## [0.2.0] - 2026-02-20
 
 ### Features
