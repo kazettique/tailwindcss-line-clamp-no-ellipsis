@@ -5,9 +5,11 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release:patch": "npm version patch",
-    "release:minor": "npm version minor",
-    "release:major": "npm version major"
+    "lint": "eslint src/",
+    "release": "bun run scripts/release.js",
+    "release:patch": "bun run scripts/release.js patch",
+    "release:minor": "bun run scripts/release.js minor",
+    "release:major": "bun run scripts/release.js major"
   },
   "repository": {
     "type": "git",
@@ -23,10 +25,11 @@
     "tailwindcss": ">=2.0.0 || >=3.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.1.3",
-    "prettier": "^3.2.4"
+    "eslint": "10.0.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-prettier": "5.5.5",
+    "globals": "17.3.0",
+    "prettier": "3.8.1"
   },
   "keywords": [
     "tailwindcss"
