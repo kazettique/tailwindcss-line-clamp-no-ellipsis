@@ -60,6 +60,9 @@ jobs:
             fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2) + '\n');
           "
 
+      - name: Ensure CHANGELOG.md exists
+        run: touch CHANGELOG.md
+
       - name: Generate CHANGELOG.md
         run: bunx git-cliff --config cliff.toml --tag ${{ env.TAG }} --unreleased --prepend CHANGELOG.md
 
