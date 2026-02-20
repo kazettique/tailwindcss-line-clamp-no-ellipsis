@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -29,7 +29,7 @@ jobs:
         uses: oven-sh/setup-bun@v2
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 22
           registry-url: 'https://registry.npmjs.org/'
@@ -59,6 +59,9 @@ jobs:
             pkg.version = process.env.VERSION;
             fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2) + '\n');
           "
+
+      - name: Ensure CHANGELOG.md exists
+        run: touch CHANGELOG.md
 
       - name: Generate CHANGELOG.md
         run: bunx git-cliff --config cliff.toml --tag ${{ env.TAG }} --unreleased --prepend CHANGELOG.md
