@@ -23,9 +23,10 @@
     "tailwindcss": ">=2.0.0 || >=3.0.0"
   },
   "devDependencies": {
-    "eslint": "8.57.1",
+    "eslint": "10.0.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.5",
+    "globals": "17.3.0",
     "prettier": "3.8.1"
   },
   "keywords": [
