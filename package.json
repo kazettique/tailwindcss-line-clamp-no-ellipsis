@@ -5,9 +5,11 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release:patch": "npm version patch --no-git-tag-version && git commit -am \"chore: update version to v$(node -p \"require('./package.json').version\")\"",
-    "release:minor": "npm version minor --no-git-tag-version && git commit -am \"chore: update version to v$(node -p \"require('./package.json').version\")\"",
-    "release:major": "npm version major --no-git-tag-version && git commit -am \"chore: update version to v$(node -p \"require('./package.json').version\")\""
+    "lint": "eslint src/",
+    "release": "bun run scripts/release.js",
+    "release:patch": "bun run scripts/release.js patch",
+    "release:minor": "bun run scripts/release.js minor",
+    "release:major": "bun run scripts/release.js major"
   },
   "repository": {
     "type": "git",
