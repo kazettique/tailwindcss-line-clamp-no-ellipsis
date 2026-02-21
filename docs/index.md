@@ -1,3 +1,7 @@
+---
+layout: doc
+---
+
 # tailwindcss-line-clamp-no-ellipsis
 
 A tailwind plugin for line clamp without ellipsis.
@@ -6,15 +10,14 @@ This tailwind plugin is inspired by [tailwindlabs/tailwindcss-line-clamp](https:
 
 Most of the time, we want to clamp the text with specific number of lines, and adding an ellipsis `...` at the end. But sometimes we just ONLY want to clipped the text WITHOUT ellipsis.
 
-
 ## Demo
 
-|                   | Original                                     | With Ellipsis                                          | Without Ellipsis                                             |
-| ----------------- | -------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------ |
-| Html              | `<div>...</div>`                             | `<div class="line-clamp-2">...</div>`                  | `<div class="line-clamp-no-ellipsis-2">...</div>`            |
-| Result (English)  | ![en original](./src/images/en-original.png) | ![en with ellipsis](./src/images/en-with-ellipsis.png) | ![en without ellipsis](./src/images/en-without-ellipsis.png) |
-| Result (Chinese)  | ![ch original](./src/images/ch-original.png) | ![ch with ellipsis](./src/images/ch-with-ellipsis.png) | ![ch without ellipsis](./src/images/ch-without-ellipsis.png) |
-| Result (Japanese) | ![jp original](./src/images/jp-original.png) | ![jp original](./src/images/jp-with-ellipsis.png)      | ![jp without ellipsis](./src/images/jp-without-ellipsis.png) |
+|                   | Original                              | With Ellipsis                                    | Without Ellipsis                                       |
+| ----------------- | ------------------------------------- | ------------------------------------------------ | ------------------------------------------------------ |
+| Html              | `<div>...</div>`                      | `<div class="line-clamp-2">...</div>`            | `<div class="line-clamp-no-ellipsis-2">...</div>`      |
+| Result (English)  | ![en original](/images/en-original.png) | ![en with ellipsis](/images/en-with-ellipsis.png) | ![en without ellipsis](/images/en-without-ellipsis.png) |
+| Result (Chinese)  | ![ch original](/images/ch-original.png) | ![ch with ellipsis](/images/ch-with-ellipsis.png) | ![ch without ellipsis](/images/ch-without-ellipsis.png) |
+| Result (Japanese) | ![jp original](/images/jp-original.png) | ![jp original](/images/jp-with-ellipsis.png)      | ![jp without ellipsis](/images/jp-without-ellipsis.png) |
 
 ## Installation
 
@@ -57,15 +60,15 @@ To remove line clamping, use `line-clamp-no-ellipsis-none`:
 
 The plugin provides 1 ~ 6 lines clamp, the css is generated shown below:
 
-| Class                         | CSS                                                                                     |
-| ----------------------------- | --------------------------------------------------------------------------------------- |
+| Class                         | CSS                                                                                      |
+| ----------------------------- | ---------------------------------------------------------------------------------------- |
 | `line-clamp-no-ellipsis-1`    | `overflow: hidden;` <br> `max-height: calc(1lh * 1);` <br> `overflow-wrap: break-word;` |
 | `line-clamp-no-ellipsis-2`    | `overflow: hidden;` <br> `max-height: calc(1lh * 2);` <br> `overflow-wrap: break-word;` |
 | `line-clamp-no-ellipsis-3`    | `overflow: hidden;` <br> `max-height: calc(1lh * 3);` <br> `overflow-wrap: break-word;` |
 | `line-clamp-no-ellipsis-4`    | `overflow: hidden;` <br> `max-height: calc(1lh * 4);` <br> `overflow-wrap: break-word;` |
 | `line-clamp-no-ellipsis-5`    | `overflow: hidden;` <br> `max-height: calc(1lh * 5);` <br> `overflow-wrap: break-word;` |
 | `line-clamp-no-ellipsis-6`    | `overflow: hidden;` <br> `max-height: calc(1lh * 6);` <br> `overflow-wrap: break-word;` |
-| `line-clamp-no-ellipsis-none` | `overflow: unset;` <br> `max-height: unset;`                                            |
+| `line-clamp-no-ellipsis-none` | `overflow: unset;` <br> `max-height: unset;`                                             |
 
 ## Customization
 
