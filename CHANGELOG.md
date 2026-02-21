@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.1] - 2026-02-21
+
+### Bug Fixes
+
+- Remove registry-url to unblock OIDC publishing
+
 ## [0.2.1] - 2026-02-20
 
 ### Chores
