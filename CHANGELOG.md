@@ -2,6 +2,39 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.3] - 2026-02-21
+
+### Bug Fixes
+
+- Remove registry-url to unblock OIDC publishing
+
+### Chores
+
+- Bump eslint in the dev-dependencies group
+- Update bun.lock
+
+### CI
+
+- Combine release and publish-dispatch workflows into single file
+
+## [0.2.1] - 2026-02-21
+
+### Bug Fixes
+
+- Remove registry-url to unblock OIDC publishing
+
+## [0.2.1] - 2026-02-20
+
+### Chores
+
+- Merge v0.2.0 back into develop
+
+### CI
+
+- Add manual publish dispatch workflow and make release steps idempotent
+- Migrate to npm OIDC trusted publishing
+- Add manual publish dispatch workflow and make release steps idempotent
+
 ## [0.2.0] - 2026-02-20
 
 ### Features

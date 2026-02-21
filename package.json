@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-line-clamp-no-ellipsis",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "description": "A tailwind plugin for line clamp without ellipsis.",
   "main": "src/index.js",
   "scripts": {
@@ -25,7 +25,7 @@
     "tailwindcss": ">=2.0.0 || >=3.0.0"
   },
   "devDependencies": {
-    "eslint": "10.0.0",
+    "eslint": "10.0.1",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.5",
     "globals": "17.3.0",
