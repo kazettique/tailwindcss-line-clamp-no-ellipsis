@@ -1,3 +1,7 @@
+---
+layout: doc
+---
+
 # tailwindcss-line-clamp-no-ellipsis
 
 這是一個不帶[刪節號](https://zh.wikipedia.org/zh-tw/省略号#)（`...`，或稱為「省略號」）的文字段落截斷 Tailwind 插件。
@@ -8,12 +12,12 @@
 
 ## 範例
 
-|              | 原始                                         | 帶刪節號                                               | 不帶刪節號                                                   |
-| ------------ | -------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------ |
-| Html         | `<div>...</div>`                             | `<div class="line-clamp-2">...</div>`                  | `<div class="line-clamp-no-ellipsis-2">...</div>`            |
-| 結果（英文） | ![en original](./src/images/en-original.png) | ![en with ellipsis](./src/images/en-with-ellipsis.png) | ![en without ellipsis](./src/images/en-without-ellipsis.png) |
-| 結果（中文） | ![ch original](./src/images/ch-original.png) | ![ch with ellipsis](./src/images/ch-with-ellipsis.png) | ![ch without ellipsis](./src/images/ch-without-ellipsis.png) |
-| 結果（日文） | ![jp original](./src/images/jp-original.png) | ![jp original](./src/images/jp-with-ellipsis.png)      | ![jp without ellipsis](./src/images/jp-without-ellipsis.png) |
+|              | 原始                                    | 帶刪節號                                            | 不帶刪節號                                                |
+| ------------ | --------------------------------------- | --------------------------------------------------- | --------------------------------------------------------- |
+| Html         | `<div>...</div>`                        | `<div class="line-clamp-2">...</div>`               | `<div class="line-clamp-no-ellipsis-2">...</div>`         |
+| 結果（英文） | ![en original](/images/en-original.png) | ![en with ellipsis](/images/en-with-ellipsis.png)   | ![en without ellipsis](/images/en-without-ellipsis.png)   |
+| 結果（中文） | ![ch original](/images/ch-original.png) | ![ch with ellipsis](/images/ch-with-ellipsis.png)   | ![ch without ellipsis](/images/ch-without-ellipsis.png)   |
+| 結果（日文） | ![jp original](/images/jp-original.png) | ![jp original](/images/jp-with-ellipsis.png)        | ![jp without ellipsis](/images/jp-without-ellipsis.png)   |
 
 ## 安裝
 
@@ -56,15 +60,15 @@ module.exports = {
 
 插件提供的截斷選項為 1～6 行，所產生的 CSS 如下：
 
-| Class                         | CSS                                                                                     |
-| ----------------------------- | --------------------------------------------------------------------------------------- |
+| Class                         | CSS                                                                                      |
+| ----------------------------- | ---------------------------------------------------------------------------------------- |
 | `line-clamp-no-ellipsis-1`    | `overflow: hidden;` <br> `max-height: calc(1lh * 1);` <br> `overflow-wrap: break-word;` |
 | `line-clamp-no-ellipsis-2`    | `overflow: hidden;` <br> `max-height: calc(1lh * 2);` <br> `overflow-wrap: break-word;` |
 | `line-clamp-no-ellipsis-3`    | `overflow: hidden;` <br> `max-height: calc(1lh * 3);` <br> `overflow-wrap: break-word;` |
 | `line-clamp-no-ellipsis-4`    | `overflow: hidden;` <br> `max-height: calc(1lh * 4);` <br> `overflow-wrap: break-word;` |
 | `line-clamp-no-ellipsis-5`    | `overflow: hidden;` <br> `max-height: calc(1lh * 5);` <br> `overflow-wrap: break-word;` |
 | `line-clamp-no-ellipsis-6`    | `overflow: hidden;` <br> `max-height: calc(1lh * 6);` <br> `overflow-wrap: break-word;` |
-| `line-clamp-no-ellipsis-none` | `overflow: unset;` <br> `max-height: unset;`                                            |
+| `line-clamp-no-ellipsis-none` | `overflow: unset;` <br> `max-height: unset;`                                             |
 
 ## 客製化
 
